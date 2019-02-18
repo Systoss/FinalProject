@@ -21,7 +21,7 @@ namespace FinalProject.Business
         {
             using (var context = new ProjectFinalEntities())
             {
-                return context.Member.Where(m => m.Participation.Any(p => p.Drink.Count() > 0)).ToList();
+                return context.Member.Where(m => m.Participation.Any(p => p.Drink.Count() == 0)).ToList();
             }
         }
 
