@@ -7,9 +7,10 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label Text="Entrer une adresse"></Label>
+        <Entry Text="{Binding SelectedAdresse}"></Entry>
+        <Button Text="Search" Command="{Binding GetCoordonneCommand}"></Button>
+        <Label Text="{Binding Coordonnee}"></Label>
     </StackLayout>
 
 </ContentPage>

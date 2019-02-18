@@ -18,3 +18,5 @@
 /FinalProject.Web/bin
 /FinalProject.Web/obj/Debug
 /packages
+/FinalProject.BusinessTests/bin/Debug
+/FinalProject.BusinessTests/obj/Debug

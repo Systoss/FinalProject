@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<FinalProject.Web.Models.EventModel>
+@{
     ViewBag.Title = "Home Page";
 }
 
@@ -9,23 +10,62 @@
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    <table id="table" style="width:100%">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.NomAssociation</td>
+                <td><button onclick="SelectEvent(@item.Id)">Select</button></td>
+            </tr>
+        }
+    </table>
 </div>
+
+<script>
+
+    function createNode(element) {
+        return document.createElement(element);
+    }
+    function append(parent, el) {
+        return parent.appendChild(el);
+    }
+    function SelectEvent(id) {
+        const url = 'http://localhost:57865/api/Events/' + id +'/Participants';
+            fetch(url)
+                .then((resp) => resp.json())
+                .then(function (data) {
+                    $('#table').empty();
+                    let participant = data,
+                        table = $('#table'),
+                        trTitle = createNode('tr'),
+                        th1 = createNode('th'),
+                        th2 = createNode('th'),
+                        th3 = createNode('th'),
+                        th4 = createNode('th')
+
+
+                        ;
+                    
+                    th1.innerHTML = "MemnerId";
+                    th2.innerHTML = "FirstName";
+                    th3.innerHTML = "LastName";
+                    th4.innerHTML = "Credit";
+                    append(trTitle, th1);
+                    append(trTitle, th2);
+                    append(trTitle, th3);
+                    append(trTitle, th4);
+                    append(table, trTitle);
+                    
+
+                })
+                .catch(function (error) {
+                    console.log(JSON.stringify(error));
+                });
+    }
+</script>

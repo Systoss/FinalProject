@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d92f422a68c449b6ad8f86b2b96ada1d" Name="Diagram1">
+        <EntityTypeShape EntityType="ProjectFinalModel.Association" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.Drink" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.DrinkType" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.Event" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.EventType" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.Member" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.Participation" Width="1.5" PointX="7.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.Path" Width="1.5" PointX="12.25" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.Route" Width="1.5" PointX="10" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.School" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.Stop" Width="1.5" PointX="7.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectFinalModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Association_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Association_School" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Event_Association" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Drink_DrinkType" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Drink_Participation" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Event_EventType" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Participation_Event" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Participation_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Path_Route" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Path_Stop" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Route_Stop" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.FK_Route_Stop1" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectFinalModel.MemberShip" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -23,7 +23,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject.Web", "FinalPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject.App.Android", "FinalProject.App\FinalProject.App.Android\FinalProject.App.Android.csproj", "{3D0A0745-CDD2-4BB8-A3BA-DD727DBBD92A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject.App", "FinalProject.App\FinalProject.App\FinalProject.App.csproj", "{0C57E8C4-4902-4EF9-9891-6815ADC47978}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalProject.App", "FinalProject.App\FinalProject.App\FinalProject.App.csproj", "{0C57E8C4-4902-4EF9-9891-6815ADC47978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalProject.BusinessTests", "FinalProject.BusinessTests\FinalProject.BusinessTests.csproj", "{6C8EFA6C-4A6E-4779-8A34-7DEF7A7F6B0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{0C57E8C4-4902-4EF9-9891-6815ADC47978}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C57E8C4-4902-4EF9-9891-6815ADC47978}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C57E8C4-4902-4EF9-9891-6815ADC47978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8EFA6C-4A6E-4779-8A34-7DEF7A7F6B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8EFA6C-4A6E-4779-8A34-7DEF7A7F6B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8EFA6C-4A6E-4779-8A34-7DEF7A7F6B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8EFA6C-4A6E-4779-8A34-7DEF7A7F6B0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
