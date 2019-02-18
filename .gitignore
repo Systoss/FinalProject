@@ -3,3 +3,18 @@
 ################################################################################
 
 /.vs/FinalProject
+/FinalProject.API/obj/Debug
+/FinalProject.API/bin
+/FinalProject.App/FinalProject.App/bin/Debug/netstandard2.0
+/FinalProject.App/FinalProject.App/obj
+/FinalProject.App/FinalProject.App.Android/bin/Debug
+/FinalProject.App/FinalProject.App.Android/obj
+/FinalProject.Business/bin/Debug
+/FinalProject.Business/obj/Debug
+/FinalProject.Entity/bin/Debug
+/FinalProject.Entity/obj/Debug
+/FinalProject.Repository/bin/Debug
+/FinalProject.Repository/obj/Debug
+/FinalProject.Web/bin
+/FinalProject.Web/obj/Debug
+/packages
